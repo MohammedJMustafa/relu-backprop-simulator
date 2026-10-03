@@ -1,6 +1,6 @@
 """The homework itself: the given values, the student and the printed answers.
 
-Everything here is copied from homework1_solution_relu.pdf so that the
+Everything here is copied from the Homework 3 solution (PDF) so that the
 simulator can reproduce and check every number of the solution.
 """
 
@@ -19,7 +19,7 @@ class Student:
 
 STUDENT = Student(name="Mohammed Jalal Mustafa", group="A")
 
-TITLE = "Homework 1"
+TITLE = "Homework 3"
 SUBTITLE = "Gradient Descent with the ReLU Activation Function"
 
 PARAMS = Params(w1=0.6, w2=0.8, w3=0.3, w4=0.4, w5=0.6, w6=-0.2, b1=0.2, b2=0.1, b3=0.1)
@@ -39,7 +39,7 @@ class Preset:
 
 
 PRESETS: tuple[Preset, ...] = (
-    Preset("homework", "Homework 1 — ReLU",
+    Preset("homework", "Homework 3 — ReLU",
            "The values given in the homework (default).", HOMEWORK),
     Preset("lecture", "Lecture example — Sigmoid",
            "The same network with the sigmoid activation, as in Lecture Example 1.", LECTURE),

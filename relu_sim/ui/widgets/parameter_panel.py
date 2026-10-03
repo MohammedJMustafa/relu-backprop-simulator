@@ -183,7 +183,7 @@ class ParameterPanel(QWidget):
             buttons.addWidget(button)
         layout.addLayout(buttons)
         layout.addSpacing(6)
-        note = QLabel("Values from homework1_solution_relu.pdf. A dot marks a value that differs from the homework.")
+        note = QLabel("Values from the Homework 3 solution. A dot marks a value that differs from it.")
         note.setObjectName("StatNote")
         note.setWordWrap(True)
         layout.addWidget(note)

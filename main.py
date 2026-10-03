@@ -1,4 +1,4 @@
-"""ReLU Backpropagation Simulator - Homework 1 (Mohammed Jalal Mustafa, Group A).
+"""ReLU Backpropagation Simulator - Homework 3 (Mohammed Jalal Mustafa, Group A).
 
 Start it by double-clicking run_simulation.bat, or from a terminal:
 

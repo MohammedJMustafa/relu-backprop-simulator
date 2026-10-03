@@ -1,4 +1,4 @@
-"""The worked solution of Homework 1 (sections 1-6 of the PDF) for any configuration.
+"""The worked solution of Homework 3 (sections 1-6 of the PDF) for any configuration.
 
 With the homework's values the document reproduces the PDF; with other
 values (or the sigmoid) every number and every sentence that depends on

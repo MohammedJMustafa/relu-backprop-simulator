@@ -74,7 +74,7 @@ class MainWindow(QMainWindow):
     def __init__(self, state: AppState):
         super().__init__()
         self.state = state
-        # Qt appends the application name: "Homework 1 · Mohammed Jalal Mustafa - ReLU Backprop Simulator"
+        # Qt appends the application name: "Homework 3 · Mohammed Jalal Mustafa - ReLU Backprop Simulator"
         self.setWindowTitle(f"{homework.TITLE} · {homework.STUDENT.name}")
         self.setWindowIcon(app_icon())
         self.setMinimumSize(1240, 760)
@@ -324,7 +324,7 @@ class MainWindow(QMainWindow):
         return path or None
 
     def export_pdf(self) -> None:
-        path = self._save_path("Export the worked solution", "Homework1_ReLU_Solution.pdf", "PDF document (*.pdf)")
+        path = self._save_path("Export the worked solution", "Homework3_ReLU_Solution.pdf", "PDF document (*.pdf)")
         if not path:
             return
         try:
@@ -338,7 +338,7 @@ class MainWindow(QMainWindow):
         frame = self.simulation.network.frame()
         if frame is None:
             return
-        path = self._save_path("Save the network diagram", "Homework1_ReLU_Network.png", "PNG image (*.png)")
+        path = self._save_path("Save the network diagram", "Homework3_ReLU_Network.png", "PNG image (*.png)")
         if not path:
             return
         try:
@@ -349,7 +349,7 @@ class MainWindow(QMainWindow):
         self.show_message(f"Saved the diagram to {path}")
 
     def export_csv(self) -> None:
-        path = self._save_path("Export the training data", "Homework1_ReLU_Training.csv", "CSV file (*.csv)")
+        path = self._save_path("Export the training data", "Homework3_ReLU_Training.csv", "CSV file (*.csv)")
         if not path:
             return
         try:

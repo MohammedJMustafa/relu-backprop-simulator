@@ -1,6 +1,6 @@
 """ReLU Backpropagation Simulator.
 
-An interactive simulation of Homework 1, "Gradient Descent with the ReLU
+An interactive simulation of Homework 3, "Gradient Descent with the ReLU
 Activation Function", by Mohammed Jalal Mustafa (Group A).
 
 Package layout

@@ -135,7 +135,7 @@ jobs:
         run: |
           ls -la release
           cat > notes.md <<'EOF'
-          Interactive simulation of **Homework 1: Gradient Descent with the ReLU Activation Function** - Mohammed Jalal Mustafa, Group A.
+          Interactive simulation of **Homework 3: Gradient Descent with the ReLU Activation Function** - Mohammed Jalal Mustafa, Group A.
 
           Every file is self-contained: no Python or other installation is needed.
 

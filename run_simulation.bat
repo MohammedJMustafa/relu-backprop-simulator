@@ -2,7 +2,7 @@
 setlocal EnableExtensions DisableDelayedExpansion
 title ReLU Backprop Simulator - Mohammed Jalal Mustafa
 rem ===========================================================================
-rem  ReLU Backpropagation Simulator - Homework 1
+rem  ReLU Backpropagation Simulator - Homework 3
 rem  Mohammed Jalal Mustafa - Group A
 rem
 rem  Double-click this file to start the simulator.

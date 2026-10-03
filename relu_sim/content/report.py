@@ -64,7 +64,7 @@ def verification_document(checks: list[AnswerCheck], gradients: list[GradientChe
     close = [c for c in checks if c.status == CLOSE]
     blocks: list[Block] = [
         Heading("Homework answer check"),
-        Paragraph(inline("Every value printed in homework1_solution_relu.pdf is recomputed by the simulator. Exact "
+        Paragraph(inline("Every value printed in the Homework 3 solution is recomputed by the simulator. Exact "
                          "values must agree to 10⁻⁹; rounded values must agree to the printed number of "
                          "decimals.")),
     ]

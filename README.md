@@ -4,7 +4,7 @@
 [![Latest release](https://img.shields.io/github/v/release/MohammedJMustafa/relu-backprop-simulator)](https://github.com/MohammedJMustafa/relu-backprop-simulator/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-**Homework 1: Gradient Descent with the ReLU Activation Function**
+**Homework 3: Gradient Descent with the ReLU Activation Function**
 Mohammed Jalal Mustafa · Group A
 
 An interactive desktop simulation of a 2‑2‑1 neural network that uses ReLU. It animates the forward pass,
