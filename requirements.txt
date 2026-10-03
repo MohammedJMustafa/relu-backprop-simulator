@@ -1,0 +1,4 @@
+# ReLU Backprop Simulator - Python 3.9 or newer (developed with Python 3.13)
+PySide6-Essentials>=6.8
+matplotlib>=3.8
+numpy>=1.24

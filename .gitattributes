@@ -1,0 +1,8 @@
+# Text files are stored with LF line endings...
+* text=auto eol=lf
+
+# ...except Windows batch files: cmd.exe needs CRLF, so they are stored byte for byte.
+*.bat -text
+
+*.png binary
+*.ico binary

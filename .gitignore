@@ -1,0 +1,31 @@
+# --- Python --------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# --- Build output (PyInstaller) --------------------------------------------------
+build/
+dist/
+*.spec
+*.exe
+
+# --- Development / verification harness: kept locally, not part of the app ------
+tests/
+tools/
+run_tests.bat
+.claude/
+CLAUDE.md
+*.log
+
+# --- Course material -------------------------------------------------------------
+*.pdf
+
+# --- Editors and operating systems ------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
