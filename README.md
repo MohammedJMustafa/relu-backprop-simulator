@@ -58,8 +58,8 @@ python main.py --self-test --gui    # ... and exercise the whole interface off-s
 ```
 
 **Build your own executable:**
-- On Windows, `build_exe.bat` creates `dist\ReLU Backprop Simulator.exe` (one file, about 75 MB).
-- On other systems, see the PyInstaller commands in the workflow.
+- On Windows, `build_exe.bat` creates `dist\ReLU Backprop Simulator.exe` (one file, about 60 MB).
+- On any system, run `python -m PyInstaller --noconfirm --clean pyinstaller.spec` (with PyInstaller installed).
 
 ---
 
@@ -118,6 +118,7 @@ The Verification page and `--self-test` print the full comparison.
 main.py                    entry point (also --self-test [--gui])
 run_simulation.bat         Windows launcher (finds or installs the Python packages)
 build_exe.bat              Windows: build a one-file executable with PyInstaller
+pyinstaller.spec           the PyInstaller build (one file; an .app bundle on macOS; unused Qt parts left out)
 requirements.txt           PySide6-Essentials, matplotlib, numpy
 .github/workflows/         builds and releases the executables for every platform
 relu_sim/

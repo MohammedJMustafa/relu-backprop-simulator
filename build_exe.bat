@@ -25,13 +25,7 @@ if errorlevel 1 "%PYEXE%" -m pip install pyinstaller
 if errorlevel 1 goto failed
 
 echo Building with %PYEXE% ...
-"%PYEXE%" -m PyInstaller --noconfirm --clean --windowed --onefile ^
-  --name "ReLU Backprop Simulator" ^
-  --icon "%~dp0relu_sim\assets\app.ico" ^
-  --workpath "%WORK%" --specpath "%WORK%" --distpath "%~dp0dist" ^
-  --exclude-module PyQt5 --exclude-module PyQt6 --exclude-module PySide2 --exclude-module tkinter ^
-  --exclude-module IPython --exclude-module pandas --exclude-module scipy --exclude-module torch ^
-  "%~dp0main.py"
+"%PYEXE%" -m PyInstaller --noconfirm --clean --workpath "%WORK%" --distpath "%~dp0dist" "%~dp0pyinstaller.spec"
 if errorlevel 1 goto failed
 
 echo.

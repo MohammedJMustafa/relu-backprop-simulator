@@ -68,20 +68,9 @@ jobs:
         run: python main.py --self-test --gui
 
       - name: Build with PyInstaller
-        shell: bash
-        run: |
-          common=(--noconfirm --clean --name "$APP_NAME"
-                  --exclude-module PyQt5 --exclude-module PyQt6 --exclude-module PySide2
-                  --exclude-module tkinter --exclude-module IPython)
-          case "$RUNNER_OS" in
-            Windows)
-              python -m PyInstaller "${common[@]}" --onefile --windowed --icon relu_sim/assets/app.ico main.py ;;
-            macOS)
-              python -m PyInstaller "${common[@]}" --onedir --windowed --icon relu_sim/assets/app.png \
-                --osx-bundle-identifier io.github.mohammedjmustafa.relubackpropsimulator main.py ;;
-            Linux)
-              python -m PyInstaller "${common[@]}" --onefile main.py ;;
-          esac
+        env:
+          RELU_SIM_EXE_NAME: ${{ env.APP_NAME }}
+        run: python -m PyInstaller --noconfirm --clean pyinstaller.spec
 
       - name: Smoke-test the executable (Windows)
         if: runner.os == 'Windows'

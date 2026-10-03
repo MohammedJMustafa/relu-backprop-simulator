@@ -10,6 +10,7 @@ env/
 build/
 dist/
 *.spec
+!pyinstaller.spec
 *.exe
 
 # --- Development / verification harness: kept locally, not part of the app ------
