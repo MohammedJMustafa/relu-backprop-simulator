@@ -12,30 +12,49 @@ backpropagation and the gradient‑descent update step by step. It also typesets
 trains the network for many iterations, compares ReLU with the sigmoid, and checks every number of the
 homework solution.
 
-![The simulation page](docs/simulation.png)
-
----
-
 ## Download
 
-Ready‑to‑run, self‑contained programs for every platform are attached to the
-**[latest release](https://github.com/MohammedJMustafa/relu-backprop-simulator/releases/latest)**.
-They need no Python and no installation.
+**One click, nothing to install.** Each button downloads the ready‑to‑run program for that system.
+No Python is needed.
 
-| Platform | File | How to start |
-|----------|------|--------------|
-| Windows 10/11 (x64) | `ReLU-Backprop-Simulator-windows-x64.exe` | double‑click (the first start takes a few seconds) |
-| macOS 13+ · Apple Silicon | `ReLU-Backprop-Simulator-macos-arm64.zip` | unzip, then right‑click the app → **Open** |
-| macOS 13+ · Intel | `ReLU-Backprop-Simulator-macos-x64.zip` | unzip, then right‑click the app → **Open** |
-| Linux x64 (glibc 2.35+) | `ReLU-Backprop-Simulator-linux-x64` | `chmod +x ReLU-Backprop-Simulator-linux-x64 && ./ReLU-Backprop-Simulator-linux-x64` |
-| Linux arm64 (glibc 2.39+) | `ReLU-Backprop-Simulator-linux-arm64` | `chmod +x …` then run it |
+<p align="center">
+  <a href="https://github.com/MohammedJMustafa/relu-backprop-simulator/releases/latest/download/ReLU-Backprop-Simulator-windows-x64.exe"><img src="docs/buttons/download-windows.svg" alt="Download for Windows" height="76"></a>
+</p>
+<p align="center">
+  <a href="https://github.com/MohammedJMustafa/relu-backprop-simulator/releases/latest/download/ReLU-Backprop-Simulator-macos-arm64.zip"><img src="docs/buttons/download-macos-arm64.svg" alt="Download for macOS (Apple Silicon)" height="62"></a>
+  <a href="https://github.com/MohammedJMustafa/relu-backprop-simulator/releases/latest/download/ReLU-Backprop-Simulator-macos-x64.zip"><img src="docs/buttons/download-macos-x64.svg" alt="Download for macOS (Intel)" height="62"></a>
+  <a href="https://github.com/MohammedJMustafa/relu-backprop-simulator/releases/latest/download/ReLU-Backprop-Simulator-linux-x64"><img src="docs/buttons/download-linux-x64.svg" alt="Download for Linux (x64)" height="62"></a>
+  <a href="https://github.com/MohammedJMustafa/relu-backprop-simulator/releases/latest/download/ReLU-Backprop-Simulator-linux-arm64"><img src="docs/buttons/download-linux-arm64.svg" alt="Download for Linux (ARM64)" height="62"></a>
+</p>
 
-The programs are built by [GitHub Actions](.github/workflows/build.yml) on each platform. Each build is
-checked there with `--self-test --gui` before it is published.
+### Three steps
 
-*Notes:*
-- The macOS app is not notarized by Apple, which is why the first start needs right‑click → Open.
-- On some Linux systems Qt needs the package `libxcb-cursor0` (`sudo apt install libxcb-cursor0`).
+1. **Download** the file for your system with a button above.
+2. **Open it.**
+   - **Windows:** double‑click the `.exe`. If Windows shows *"Windows protected your PC"*, click
+     **More info → Run anyway** (the program is not code‑signed). The window appears after a few seconds.
+   - **macOS:** unzip the file, then **right‑click the app → Open** the first time (it is not notarized by Apple).
+   - **Linux:** make it executable, then run it:
+     `chmod +x ReLU-Backprop-Simulator-linux-x64 && ./ReLU-Backprop-Simulator-linux-x64`
+3. **Press <kbd>Space</kbd>** to play the simulation.
+
+All downloads are on the **[latest release page](https://github.com/MohammedJMustafa/relu-backprop-simulator/releases/latest)**.
+They are built and checked automatically by [GitHub Actions](.github/workflows/build.yml) on every platform.
+
+<details>
+<summary>System requirements and notes</summary>
+
+| System | Requirement |
+|--------|-------------|
+| Windows | Windows 10 or 11, 64‑bit |
+| macOS | macOS 13 or newer; pick *Apple Silicon* for M‑series Macs, *Intel* for older ones |
+| Linux x64 | glibc 2.35 or newer (for example Ubuntu 22.04+) |
+| Linux ARM64 | glibc 2.39 or newer (for example Ubuntu 24.04+) |
+
+On some Linux systems Qt also needs the package `libxcb-cursor0` (`sudo apt install libxcb-cursor0`).
+</details>
+
+![The simulation page](docs/simulation.png)
 
 ---
 
