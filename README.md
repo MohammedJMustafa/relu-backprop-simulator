@@ -1,6 +1,5 @@
 # ReLU Backprop Simulator
 
-[![Build executables](https://github.com/MohammedJMustafa/relu-backprop-simulator/actions/workflows/build.yml/badge.svg)](https://github.com/MohammedJMustafa/relu-backprop-simulator/actions/workflows/build.yml)
 [![Latest release](https://img.shields.io/github/v/release/MohammedJMustafa/relu-backprop-simulator)](https://github.com/MohammedJMustafa/relu-backprop-simulator/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
@@ -40,7 +39,6 @@ No Python is needed.
 3. **Press <kbd>Space</kbd>** to play the simulation.
 
 All downloads are on the **[latest release page](https://github.com/MohammedJMustafa/relu-backprop-simulator/releases/latest)**.
-They are built and checked automatically by [GitHub Actions](.github/workflows/build.yml) on every platform.
 
 <details>
 <summary>System requirements and notes</summary>
@@ -140,10 +138,9 @@ run_simulation.bat         Windows launcher (finds or installs the Python packag
 build_exe.bat              Windows: build a one-file executable with PyInstaller
 pyinstaller.spec           the PyInstaller build (one file; an .app bundle on macOS; unused Qt parts left out)
 requirements.txt           PySide6-Essentials, matplotlib, numpy
-.github/workflows/         builds and releases the executables for every platform
 relu_sim/
   homework.py              the given values, the student, the printed answers, presets
-  selftest.py              the command-line and CI self-test
+  selftest.py              the command-line self-test
   core/                    the maths - pure Python, no GUI
     activations.py         ReLU (ReLU'(0) = 0, as in the homework) and a numerically stable sigmoid
     network.py             forward pass, backpropagation, gradient-descent update
