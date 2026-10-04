@@ -18,6 +18,7 @@ tests/
 tools/
 run_tests.bat
 .claude/
+.playwright-mcp/
 CLAUDE.md
 *.log
 

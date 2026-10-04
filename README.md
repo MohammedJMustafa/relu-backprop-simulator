@@ -23,6 +23,7 @@ No Python is needed.
 <p align="center">
   <a href="https://github.com/MohammedJMustafa/relu-backprop-simulator/releases/latest/download/ReLU-Backprop-Simulator-macos-arm64.zip"><img src="docs/buttons/download-macos-arm64.svg" alt="Download for macOS (Apple Silicon)" height="62"></a>
   <a href="https://github.com/MohammedJMustafa/relu-backprop-simulator/releases/latest/download/ReLU-Backprop-Simulator-macos-x64.zip"><img src="docs/buttons/download-macos-x64.svg" alt="Download for macOS (Intel)" height="62"></a>
+  <br>
   <a href="https://github.com/MohammedJMustafa/relu-backprop-simulator/releases/latest/download/ReLU-Backprop-Simulator-linux-x64"><img src="docs/buttons/download-linux-x64.svg" alt="Download for Linux (x64)" height="62"></a>
   <a href="https://github.com/MohammedJMustafa/relu-backprop-simulator/releases/latest/download/ReLU-Backprop-Simulator-linux-arm64"><img src="docs/buttons/download-linux-arm64.svg" alt="Download for Linux (ARM64)" height="62"></a>
 </p>
